@@ -1,18 +1,18 @@
 #include <stdio.h>
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
-    char c;
+    //declare a variable
+    char alphabet;
 
-    for (c = 'a'; c <= 'z'; c++)
-        putchar(c);
-    for (c = 'A'; c <= 'Z'; c++)
-        putchar(c);
+    for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+    {
+        // print the value of the variable 
+        putchar(alphabet);
+
+    }
+
     putchar('\n');
     return (0);
 }
+
