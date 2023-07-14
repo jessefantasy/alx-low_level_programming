@@ -1,28 +1,28 @@
 #include <stdio.h>
-/**
- * main - main block
- * Description: Use `putchar` to print lowercase and then uppercase alphabet.
- * Return: 0
- */
+
 int main(void)
 {
-	char c = 'a';
+    /* Declare a variable and initialize it with the first member of 
+       the range [a - z] 
+    */
 
-	while (c <= 'z')
-	{
-		putchar(c);
-		c++;
-	}
+    char alphabet = 'a';
 
-	c = 'A';
+     /* check to see if the current value of your variable is less than 
+         or the same as the last member (z) of the given range. While 
+         the value is less, go ahead and print the value 
+      */
 
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
-	}
+    while (alphabet <= 'z')
+    {
+        // print the value of the variable 
+        putchar(alphabet);
 
-	
+        // increment the variable (ie: a becomes b)
+        alphabet++;
+    }
 
-	return (0);
+    putchar('\n');
+    return (0);
 }
+
